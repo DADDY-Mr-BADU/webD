@@ -1,0 +1,71 @@
+.roll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    gap: 100px;
+}
+
+i {
+    font-size: 70px;
+}
+
+.msgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    font-size: x-large;
+}
+
+.inputbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    margin-top: 3vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.buttonbox, .resetbutton {
+    position: relative;
+    color: coral;
+    background-color: black;
+    font-size: larger;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonbox::before, .resetbutton::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+    z-index: -1;
+    border-radius: 8px;
+    filter: blur(10px);
+}
+
+.buttonbox:hover::before, .resetbutton:hover::before {
+    filter: blur(15px);
+}
+
+.buttonbox:focus, .resetbutton:focus {
+    outline: none;
+    filter: blur(15px);
+}
+
+body {
+    justify-content: center;
+    text-align: center;
+}

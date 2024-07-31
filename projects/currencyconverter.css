@@ -1,0 +1,56 @@
+*{
+    margin: 0;padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #4deeea, #74ee15, #ffe700, #f000ff, #001eff);
+    background-size: 600% 600%;
+    animation: gradient 15s ease-in-out infinite;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.container{
+    background-color:white;border-radius: 1rem;padding: 2rem;
+    min-height: 45vh;
+    min-width: 45vh;
+}
+form{
+    margin: 2rem 0 1rem 0;
+}
+form select,input,button{
+    border: none;
+    width: 100%;outline: 0.25rem;
+  
+    
+}
+form input{
+    padding-left: 0.5rem;
+    min-height: 2rem;
+    border-radius: 2rem;  border: solid black;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;align-items: center;margin: 2rem;
+}
+.dropdown i{
+    font-size: 3rem;margin-top: 1rem;
+}
+.select-container{
+    display: flex;
+    justify-content: center;align-items: center;
+}
+.msg{
+    margin: 2rem 0 2rem 0;
+    text-align: center;
+}
+form button{
+    min-height: 3rem;background-color: coral;
+    font-size: large;font-family: 'Times New Roman', Times, serif;
+}

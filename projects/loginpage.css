@@ -1,0 +1,100 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: cyan;
+    background-image: url(image1.jpg);
+}
+
+.loginbox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border: 3px solid cyan;
+    border-radius: 15px;
+    background-color: black;
+    box-shadow: 0 0 7px 1px cyan;
+    transition: transform 0.3s ease-in-out;
+}
+
+.loginbox::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 15px;
+    background: linear-gradient(to right, #ff00cc, #3333ff, red, orange, green, purple, violet);
+    z-index: -1;
+}
+
+input {
+    border: none;
+    outline: none;
+    color: coral;
+    border-bottom: 2px solid coral;
+    width: 100%;
+    padding-left: 0.5rem;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+    background-color: transparent;
+}
+
+input:focus {
+    border-bottom-color: darkorange;
+}
+
+input:hover {
+    transform: scale(1.1);
+}
+
+button {
+    width: 100%;
+    max-width: 150px;
+    color: cyan;
+    border-radius: 15px;
+    border: 2px solid chartreuse;
+    text-align: center;
+    background-color: black;
+    transition: transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+#forgetpass {
+    margin-top: 10px;
+    color: cyan;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-align: right;
+    width: 100%;
+    max-width: 100%;white-space: nowrap;
+}
+
+
+@media (min-width: 768px) {
+    .loginbox {
+        width: 80%;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .loginbox {
+        width: 60%;
+        max-width: 400px;
+    }
+}
